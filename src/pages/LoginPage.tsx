@@ -4,6 +4,8 @@ import style from  "./LoginPage.module.css"
 import { IoIosWallet } from "react-icons/io";
 import { PiCoins } from "react-icons/pi";
 import { SiAdguard } from "react-icons/si";
+import { BoxTitle } from "../components/BoxTitle";
+import { EmailInput } from "../components/EmailInput";
 
 
 export function LoginPage (){
@@ -42,12 +44,18 @@ export function LoginPage (){
                 <div className="col-12 col-lg-5 p-5 order-2 order-lg-1">
                     <form onSubmit={handleLoginSubmit} className={`${style.logInForm} gap-4`}>
 
-                        <div className={`${style.formTitle}`}>
-                            <h2>Welcome back</h2>
-                            <small className="subtitle">Log in to see your account, budgets and spending</small>
-                        </div>
+                        <BoxTitle 
+                            title="Welcome back" 
+                            subtitle="Log in to see your account, budgets and spending"/>
+                
+                        <EmailInput 
+                            value={form.email}
+                            onChange={email => setForm({...form, email})}
+                            inputDisable={loading}
+                            autoFocus={true}
+                            />
                         
-                        <div className={`${style.emailInput} my-3`}>
+                        {/* <div className={`${style.emailInput} my-3`}>
                             <label className="form-label" htmlFor="email">Email</label>
                             <input 
                                 className="form-control"
@@ -62,7 +70,7 @@ export function LoginPage (){
                                 autoFocus
                                 aria-describedby="email-error"
                                 disabled={loading}/>
-                        </div>
+                        </div> */}
 
                         <div className={`${style.passwordInput} my-3`}>
 

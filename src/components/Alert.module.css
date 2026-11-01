@@ -1,0 +1,19 @@
+.successAlert{
+    background-color: var(--success-bg);
+    color: var(--success-text-color);
+}
+
+.infoAlert{
+    background-color: var(--info-bg);
+    color: var(--info-text-color);
+}
+
+.warningAlert{
+    background-color: var(--warning-bg);
+    color: var(--warning-text-color);
+}
+.errorAlert{
+    background-color: var(--error-bg);
+    color: var(--error-text-color);
+}
+

@@ -1,6 +1,6 @@
 import { useAuth } from '../auth/AuthContext';
 import styles from './Navbar.module.css';
-import { Navbar as BsNavbar, Nav, Container } from 'react-bootstrap';
+import { Navbar as BsNavbar, Nav } from 'react-bootstrap';
 
 export function Navbar () {
 

@@ -1,0 +1,9 @@
+.subtitle
+{
+  color: var(--text-muted);
+}
+
+.subtitle {
+  font-size: 13px;
+  margin-top: 6px;
+}

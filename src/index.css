@@ -30,11 +30,26 @@
   --gap-items: 10px;
 
   --padding-box: 45px 30px;
-  --border-radius-box: 25px;
+  --border-radius-box: 15px;
   --letter-spacing-format: 3px;
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+
+  
+  /* COLORS FOR ALERTS */
+  --error-bg: #e29898;
+  --error-text-color: rgb(193, 40, 40);
+ 
+  --info-bg: #98c4e2;
+  --info-text-color: rgb(56, 121, 232);
+ 
+  --success-bg: #98e29b;
+  --success-text-color: rgb(76, 232, 56);
+ 
+  --warning-bg: #e2db98;
+  --warning-text-color: rgb(205, 232, 56);
+
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -124,15 +139,9 @@ p {
   margin: 0;
 }
 
-.subtitle,
 .hint,
 small {
   color: var(--text-muted);
-}
-
-.subtitle {
-  font-size: 13px;
-  margin-top: 6px;
 }
 
 .form-label{

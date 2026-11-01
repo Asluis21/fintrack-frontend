@@ -1,5 +1,5 @@
 import './App.css'
-import { LoginPage } from './pages/LoginPage';
+import { Outlet } from 'react-router-dom'
 import { Navbar } from './components/Navbar';
 
 
@@ -8,7 +8,7 @@ function App() {
   return (  
       <div>
         <Navbar/>
-        <LoginPage/>
+        <Outlet/>
       </div>
     
     )

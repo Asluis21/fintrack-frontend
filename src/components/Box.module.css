@@ -1,0 +1,7 @@
+.box{
+    padding: var(--padding-box);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--border-radius-box);
+    text-align: left;
+    background-color: var(--surface);
+}
