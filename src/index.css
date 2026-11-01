@@ -168,10 +168,6 @@ span{
   font-size: var(--font-size-hint);
 }
 
-.btn{
-  font-size: var(--font-size-control) !important;
-}
-
 code,
 .counter {
   font-family: var(--mono);
@@ -185,18 +181,6 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
-
-.btn.btn-success {
-  background: var(--accent) !important;        /* light #1f6f54 · dark #5cc49a */
-  color: var(--on-accent) !important;          /* light #ffffff · dark #0e1412 */
-  border: none !important;
-  width: 100% !important;
-  margin: 20px 0 !important;
-}
-
-.btn.btn-success:hover {
-  background: var(--accent-hover) !important;  /* light #185a44 · dark #7ad3ae */
 }
 
 input::placeholder {
@@ -218,11 +202,32 @@ input::placeholder {
   background: var(--navbar);
 }
 
+
+/* ========= Button */
+
 .btn{
   color: var(--text) !important;
   border: 2px solid var(--text) !important;
+  font-size: var(--font-size-control) !important;
 }
 
 .btn:hover{
   color: var(--text-h) !important;
+}
+
+.defaultWith{
+    width: 50px;
+}
+
+/* Button */
+
+
+small{
+  font-size: var(--font-size-hint) !important;
+}
+
+a{
+  color: var(--accent) !important;
+  font-size: var(--font-size-hint) !important;
+
 }

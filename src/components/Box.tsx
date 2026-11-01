@@ -8,7 +8,7 @@ interface BoxProps {
 export function Box({children} : BoxProps){
 
     return (
-        <div className={`${style.box} gap-4 p-3 `}>
+        <div className={`${style.box} gap-4 py-5 px-4 m-3`}>
             {children}
         </div>
     )

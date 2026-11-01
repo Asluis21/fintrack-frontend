@@ -1,0 +1,12 @@
+.btnSuccess {
+  background: var(--accent) !important;        
+  color: var(--on-accent) !important;          
+  border: none !important;
+  width: 100% !important;
+  margin: 20px 0 !important;
+}
+
+.btnSuccess:hover {
+  background: var(--accent-hover) !important;  
+}
+

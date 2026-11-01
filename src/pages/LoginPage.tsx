@@ -6,6 +6,7 @@ import { PiCoins } from "react-icons/pi";
 import { SiAdguard } from "react-icons/si";
 import { BoxTitle } from "../components/BoxTitle";
 import { EmailInput } from "../components/EmailInput";
+import { PasswordInput } from "../components/PasswordInput";
 
 
 export function LoginPage (){
@@ -53,44 +54,15 @@ export function LoginPage (){
                             onChange={email => setForm({...form, email})}
                             inputDisable={loading}
                             autoFocus={true}
-                            />
-                        
-                        {/* <div className={`${style.emailInput} my-3`}>
-                            <label className="form-label" htmlFor="email">Email</label>
-                            <input 
-                                className="form-control"
-                                name="email"
-                                id="email"
-                                autoComplete="email"
-                                onChange={e => setForm({...form, email: e.target.value})}
-                                value={form.email}
-                                type="email"
-                                placeholder="you@example.com"
-                                required
-                                autoFocus
-                                aria-describedby="email-error"
-                                disabled={loading}/>
-                        </div> */}
+                        />
 
-                        <div className={`${style.passwordInput} my-3`}>
-
-                            <div className={`${style.passwordLabel}  d-flex justify-content-between`}>
-                                <label className="form-label" htmlFor="password">Password</label>
-                                <a href="#">Forgot password?</a>
-                            </div>
-                            <input
-                                className="form-control"
-                                id="password"
-                                name="password"
-                                autoComplete="current-password"
-                                onChange={e => setForm({...form, password: e.target.value})}
-                                type="password"
-                                value={form.password}
-                                placeholder="Enter your password"
-                                disabled={loading}
-                                aria-describedby="password-error"
-                                required/>
-                        </div>
+                        <PasswordInput
+                            value={form.password}
+                            onChange={password => setForm({...form, password})}
+                            loading={loading}
+                            forgotPassEnabled={true}
+                            placeholder="Enter your password"
+                        />
 
                         <div className={`my-3 d-flex gap-2`}>
                             <input type="checkbox" id="keep-sign-in" name="keep-sign-in"/>

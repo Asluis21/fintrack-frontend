@@ -13,10 +13,6 @@
     color: var(--text);
 }
 
-.passwordLabel a{
-    color: var(--accent);
-}
-
 .logInInfo{
     text-align: left;
 }
@@ -88,15 +84,6 @@
 .divider span{
     margin: 0 10px;
 }
-
-.signUp{
-    text-align: center;
-}
-
-.signUp a{
-    color: var(--accent);
-}
-
 
 
 
